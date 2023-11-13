@@ -1,11 +1,12 @@
 .burger {
     display: none;
-    background-image: url('/image-home/burderfon.png');
-    height: 497px;
+    
 }
 
 .burger__open {
     display: block;
+    background-image: url('../image-home/burderfon.png');
+    height: 497px;
 }
 
 .burger__arrow {
