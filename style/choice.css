@@ -106,7 +106,7 @@
     cursor: pointer;
 }
 
-.choice__wrapper-hobbies-item-active {
+/* .choice__wrapper-hobbies-item-active {
     border-radius: 5px;
     border: 1px solid #000;
     background-color: #fff;
@@ -115,7 +115,7 @@
     cursor: pointer;
     border: 1px solid #FF2C15;
     background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
-}
+} */
 
 .choice__wrapper-hobbies-item span {
     color: #000;
@@ -174,13 +174,17 @@
     padding-top: 15px;
 }
 
-.choice__wrapper-hobbies-item:hover {
-    border: 1px solid #FF2C15;
+.choice__wrapper-hobbies-item span:hover {
+    /* border: 1px solid #FF2C15; */
+    color: #fff;
+    height: 40px;
     background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
 }
 
 .choice__wrapper-hobbies-item1:hover {
     border: 1px solid #FF2C15;
+    border-radius: 5px;
+    color: #fff;
     background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
 }
 
@@ -255,6 +259,7 @@
 
 .choice__wrapper-country-item:hover {
     background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    color: #fff;
 }
 
 .choice__wrapper-country-item0 {
