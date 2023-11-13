@@ -237,3 +237,59 @@
     width: 134px;
     height: 127px;
 }
+
+@media (max-width: 360px) {
+    .burger__container-right {
+        display: none;
+    }
+
+    .burger__container-left {
+        width: 360px;
+    }
+    
+    .burger__container-links {
+        gap: 15px;
+    }
+    
+    
+    .burger__container-links-link1 span {
+        padding-right: 95px;
+        font-size: 18px;
+    }
+   
+    
+    .burger__container-links-link2 span {
+        padding-right: 135px;
+        font-size: 18px;
+    }
+    
+    .burger__container-links-link3 span {
+        padding-right: 103px;
+        font-size: 18px;
+    }
+    
+    .burger__container-links-link4 span {
+        padding-right: 22px;
+        font-size: 18px;
+    }
+    
+    .burger__container-links-link5 span {
+        padding-right: 150px;
+        font-size: 18px;
+    }
+   
+    .burger__container-links-link6 span {
+        padding-right: 184px;
+        font-size: 18px;
+    }
+
+    .burger__container-links-link7 span {
+        padding-right: 194px;
+        font-size: 18px;
+    }
+  
+    .burger__container-links-link8 span {
+        padding-right: 166px;
+        font-size: 18px;
+    }
+}
