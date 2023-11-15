@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/fonts.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style-chat/header.css">
+        <link rel="stylesheet" href="style-chat/burger.css">
+        <link rel="stylesheet" href="style-chat/club.css">
+        <link rel="stylesheet" href="style-chat/chatfriends.css">
+</head>
+<body class="fon">
+    <section class="chat">
+        <div class="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__container-logo">
+                        <img class="header__logo" src="image-home/logo.png" alt="">
+                        <img class="header__losso" src="image-home/losso.png" alt="">
+                    </div>
+                    <div class="header__container-blog">
+                        <div class="header__container-ring">
+                            <img class="header__container-ring-foto" src="image-home/ring.png" alt="">
+                        </div>
+                        <div class="header__container-name">
+                            <img class="header__container-foto-size" src="image-home/Image.png"alt="">
+                            <div class="header__container-name-man">
+                                <div class="header__container-name-name">
+                                    <span class="header__container-imya">Александр</span>
+                                    <div class="header__container-stars">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__container-bag">
+                                <img class="header__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                <span class="header__container-bag-span">45</span>
+                            </div>
+                        </div>
+                        <button class="header__container-menu">
+                            <img onclick="openBurger()" src="image-home/menu.png" alt="">
+                        </button>
+                    </div>
+                    <img class="header__spiral" src="image-home/spirali.png" alt="">
+                </div>
+                <!-- мобильная версия -->
+                <div class="hmobil">
+                    <div class="container">
+                        <div class="hmobil__container">
+                            <div class="hmobil__container-logo">
+                                <div class="hmobil__container-logo-left">
+                                    <span class="hmobil__container-logo-title">World Stars</span>
+                                    <span class="hmobil__container-logo-title">мировые звезды brics</span>
+                                </div>
+                                <div class="hmobil__container-logo-right">
+                                    <img class="hmobil__container-logo-search" src="image-home/lupamobil.png" alt="">
+                                    <img src="image-home/ringmobil.png" alt="">
+                                    <button class="hmobil__container-logo-menu">
+                                        <img onclick="openBurger()" src="image-home/menumobil.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hmobil__container-name">
+                                <img class="hmobil__container-foto-size" src="image-home/mobImage.png"alt="">
+                                <div class="hmobil__container-name-man">
+                                    <div class="hmobil__container-name-name">
+                                        <span class="hmobil__container-imya">Александр</span>
+                                        <div class="hmobil__container-stars">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hmobil__container-bag">
+                                    <img class="hmobil__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                    <span class="hmobil__container-bag-span">45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- burger menu -->
+        <div id="burger" class="burger">
+            <div class="container">
+                <button onclick="closeBurger()" class="burger__arrow">
+                    <img src="image-home/burgerarrow.svg" alt="">
+                </button>
+                <div class="burger__container">
+                    <div class="burger__container-left">
+                        <div class="burger__container-links">
+                            <a href="#" class="burger__container-links-link1">
+                                <img src="image-home/burger1.svg" alt="">
+                                <span>Звездный магазин</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link2">
+                                <img src="image-home/burger2.svg" alt="">
+                                <span>Пиши новости</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link3">
+                                <img src="image-home/burger3.svg" alt="">
+                                <span>Предложи звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link4">
+                                <img src="image-home/burger4.svg" alt="">
+                                <span>Выбирай мировую звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link5">
+                                <img src="image-home/burger5.png" alt="">
+                                <span>Олимп славы</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link6">
+                                <img src="image-home/burger6.svg" alt="">
+                                <span>Кошелек</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link7">
+                                <img src="image-home/burger7.svg" alt="">
+                                <span>Профиль</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link8">
+                                <img src="image-home/burger8.svg" alt="">
+                                <span>Афиша встреч</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="burger__container-right">
+                        <div class="burger__container-right-up">
+                            <img src="image-home/bagheader.png" alt="">
+                            <h3 class="burger__container-right-title">Зарабатывай на сайте! </h3>
+                        </div>
+                        <div class="burger__container-right-images">
+                            <img src="image-home/burgerimage1.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage4.png" alt="">
+                            <img src="image-home/burgerimage5.png" alt="">
+                            <img src="image-home/burgerimage6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="club">
+            <div class="container">
+                <div class="club__container">
+                    <div class="club__container-left">
+                        <h2 class="club__container-title">Клуб&nbsp;звездных знакомств</h2>
+                        <p class="club__container-description">Обсуди свою новость,  предложи  мировую звезду, получи <img src="image-home/redheartclub.png" alt="">м от модератора и<img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt="">от друзей </p>
+                    </div>
+
+                    <div class="club__container-name">
+                        <span>Джеки Чан</span>
+                        <img src="image-home/djekiclub.png" alt="">
+                    </div>
+
+                    <div class="club__container-image">
+                        <img class="choice__image-star0" src="image-home/star3.png" alt="">
+                        <img class="choice__image-left" src="image-home/imagechoice.png" alt="">
+                        <img class="choice__image-star1" src="image-home/star1.png" alt="">
+                        <img class="choice__image-star2" src="image-home/star2.png" alt="">
+                        <img class="choice__image-star3" src="image-home/star3.png" alt="">
+                        <img class="choice__image-star4" src="image-home/star4.png" alt="">
+                        <!-- <img class="choice__image-starbig0" src="image-home/Starbig0.png" alt="">
+                        <img class="choice__image-starbig1" src="image-home/Starbig1.png" alt="">
+                        <img class="choice__image-starbig2" src="image-home/Starbig2.png" alt="">
+                        <img class="choice__image-starbig3" src="image-home/Starbig3.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat__friends">
+            <div class="container">
+                <div class="chat__friends-up">
+                    <div class="chat__friends-up-item">Чат  с Еленой Хунес<br>Радригес</div>
+                    <div class="chat__friends-up-item0">Чат с друзьями</div>
+                    <div class="chat__friends-up-item">Выбирай звезду общайся в группе</div>
+                </div>
+                <div class="chat__friends-down">
+                    <div class="chat__friends-down-one">
+                        <img src="image-home/elenahunes.png" alt="">
+                        <div class="chat__friends-down-one one">
+                            <button class="chat__friends-down-profil">Смотреть профиль<img src="image-home/arrowchat.svg" alt=""></button>
+                            <span class="chat__friends-down-news">120 новостей</span>
+                        <div class="header__container-stars">
+                            <img src="image-home/Staryellow.png" alt="">
+                            <img src="image-home/Staryellow.png" alt="">
+                            <img src="image-home/Staryellow.png" alt="">
+                            <img src="image-home/starwhite.png" alt="">
+                            <img src="image-home/starwhite.png" alt="">
+                        </div>
+                        </div>
+                    </div>
+                    <button class="chat__friends-down-btn">ЧАТ С ЕЛЕНОЙ</button>
+                    <div>
+                        <div class="chat__friends-down-two">
+                            <img src="image-home/hends.png" alt="">
+                            <span>Подтвержденные знакомства</span>
+                        </div>
+                        <button>ЧАТ С ДРУЗЬЯМИ</button>
+                    </div>
+                    <div class="chat__friends-down-three">
+                        <!-- обдумать пока только размер и фон -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="index.js"></script>
+</html>

@@ -267,8 +267,6 @@
     cursor: pointer;
     border: 1px solid #FF2C15;
     background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
-
-    
 }
 
 .choice__wrapper-country-item img {
@@ -335,7 +333,8 @@
 
     .choicemobil__wrapper-hobbies {
         display: flex;
-        gap: 4px;
+        /* gap: 4px; */
+        justify-content: space-between;
     }
 
     /* .choicemobil__wrapper-hobbies-item1 {
@@ -478,8 +477,40 @@
 /* .chomobil */
     .chomobil__wrapper-country {
         display: grid;
-        grid-template-columns: repeat(3, min-content);
+        grid-template-columns: repeat(2, min-content);
         gap: 25px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+
+    .choice__wrapper-country-item {
+        width: 109px;
+        padding: 8px 16px;
+        font-size: 13px;
+        text-align: center;
+        display: block;
+    }
+
+    .chomobil__pagination {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .chomobil__pagination-left {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    }
+    
+    .chomobil__pagination-right {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+        border: 2px solid var(--, #FF2C15);
+            background: #FFF;
     }
     
 }
